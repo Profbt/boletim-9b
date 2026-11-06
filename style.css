@@ -163,3 +163,131 @@ td:first-child {
   color: var(--cor-neutro);
   font-style: italic;
 }
+
+/* Estilos Adicionados para a Nova Etapa: PIN e Edição */
+
+.login-card {
+  background-color: var(--cor-card-fundo);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 420px;
+  margin: 40px auto;
+  box-shadow: 0 4px 12px rgba(74, 20, 140, 0.12);
+  border-top: 4px solid var(--cor-principal);
+  text-align: center;
+}
+
+.login-card h2 {
+  color: var(--cor-secundaria);
+  margin-bottom: 10px;
+}
+
+.login-card p {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.form-grupo {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-grupo label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--cor-secundaria);
+}
+
+.form-grupo input,
+.input-edicao {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-grupo input:focus,
+.input-edicao:focus {
+  border-color: var(--cor-principal);
+}
+
+.input-edicao {
+  width: 70px;
+  text-align: center;
+  padding: 6px;
+}
+
+.input-edicao.campo-invalido {
+  border: 2px solid var(--cor-atencao);
+  background-color: #ffebee;
+}
+
+.btn-principal {
+  background-color: var(--cor-principal);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-principal:hover {
+  background-color: #a3134c;
+}
+
+.btn-secundario {
+  background-color: transparent;
+  color: var(--cor-secundaria);
+  border: 1px solid var(--cor-secundaria);
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-secundario:hover {
+  background-color: var(--cor-secundaria);
+  color: #ffffff;
+}
+
+.acoes-boletim {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.painel-salvar {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.mensagem-status {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  min-height: 20px;
+}
+
+.msg-erro {
+  color: var(--cor-atencao);
+}
+
+.msg-sucesso {
+  color: var(--cor-sucesso);
+}
+
+.msg-info {
+  color: var(--cor-secundaria);
+}
